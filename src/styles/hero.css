@@ -1,0 +1,64 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-container {
+    display: flex;
+    height: 300xp;
+    width: 300px;
+    margin: auto 0;
+    border-radius: 500px;
+    overflow: hidden;
+}
+.hero-details {
+    align-self: center;
+    text-align: center;
+    padding-inline: 5rem;
+}
+
+.hero-details p {
+    font-weight: 600;
+}
+
+.hero-intro-1 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-intro-1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-intro-2 {
+    font-size: 1.5rem;
+    /* margin-bottom: 0.5rem; */
+}
+
+.hero-name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 2rem;
+    gap: 1rem;
+}
+
+

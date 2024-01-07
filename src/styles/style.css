@@ -1,0 +1,55 @@
+:root {
+    --clr-slate: rgb(85, 85, 85);
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: black;
+    --var-navheight: 17vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+p {
+    color: var(--clr-slate);
+}
+
+a {
+    color: var(--clr-black);
+    text-decoration: none;
+}
+
+#hero {
+    padding: 2rem;
+    height: calc(100vh - var(--var-navheight));
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+section {
+    padding: 2rem;
+    height: 100vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+

@@ -1,0 +1,34 @@
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    height: var(--var-navheight);
+    padding: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    width: auto;
+    height: auto;
+    padding-inline: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+}
+
+.nav-logo {
+    font-size: 2rem;
+    cursor: default;
+}
