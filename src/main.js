@@ -7,6 +7,7 @@ import '../src/styles/utils.css'
 import '../src/styles/hero.css'
 import '../src/styles/about.css'
 import '../src/styles/techs.css'
+import '../src/styles/works.css'
 import '../src/scripts.js'
 
 

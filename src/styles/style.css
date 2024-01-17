@@ -2,6 +2,7 @@
     --clr-slate: rgb(85, 85, 85);
     --clr-white: rgb(255, 255, 255);
     --clr-black: black;
+    --clr-formalblue: #0189ff;
     --var-navheight: 17vh;
 }
 
@@ -50,6 +51,11 @@ section {
     height: 100vh;
     box-sizing: border-box;
     min-height: fit-content;
+    border: 1px solid red;
 }
 
+
+.works_main {
+    height: auto !important;
+}
 

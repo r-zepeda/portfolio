@@ -32,3 +32,24 @@ nav {
     font-size: 2rem;
     cursor: default;
 }
+
+
+#desktop-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#desktop-nav > * {
+    flex: 1;
+}
+
+#desktop-nav > *:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desktop-nav > *:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
