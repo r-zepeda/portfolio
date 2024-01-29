@@ -4,15 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Ralph's Portfolio</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ralph Zepeda</title>
   </head>
+
   <body>
     <div id="app"></div>
     <nav id="desktop-nav">
-      <div class="nav-logo">RZ</div>
+      <div class="nav-logo-wrapper">
+        <svg
+          class="nav-logo"
+          width="420"
+          height="450"
+          viewBox="-10 -10 420 450"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H400V400H0V0Z" stroke="#393632" stroke-width="20" />
+          <path
+            d="M400 200C400 310.457 310.457 400 200 400C89.5431 400 0 310.457 0 200C0 89.5431 89.5431 0 200 0C310.457 0 400 89.5431 400 200Z"
+            stroke="#393632"
+            stroke-width="20"
+          />
+        </svg>
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about" class="" id="">About</a></li>
@@ -22,12 +40,12 @@
         </ul>
       </div>
       <div class="email_container">
-        ralphpzepeda@gmail.com
+        <p>ralphpzepeda@gmail.com</p>
       </div>
     </nav>
 
     <nav id="mobile-nav">
-      <div class="nav-logo">RZ</div>
+      <div class="nav-logo"><h3>RZ</h3></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -35,113 +53,273 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" class="" id="" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" class="" id="" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" class="" id="" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" class="" id="" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <a href="#about" class="" id="" onclick="toggleMenu()">About</a>
+          </li>
+          <li>
+            <a href="#experience" class="" id="" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="" id="" onclick="toggleMenu()"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="" id="" onclick="toggleMenu()">Contact</a>
+          </li>
         </div>
       </div>
     </nav>
 
+    <section class="hero_n">
+      <div class="intro_name_wrapper">
+        <svg
+          id="h_intro"
+          width="620"
+          height="115"
+          viewBox="-10 0 620 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M606.175 85.088C606.175 100.448 593.631 110.56 577.503 110.688V101.216C586.975 101.088 593.375 96.736 594.399 89.824C593.247 90.208 592.479 90.208 591.711 90.208C585.951 90.208 581.599 85.472 581.599 79.712C581.599 73.056 586.591 68.576 593.119 68.576C601.311 68.576 606.175 74.208 606.175 85.088Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+          <path
+            d="M568.796 75.104V92H506.972V0.095993H567.9V16.992H526.428V36.32H564.06V53.088H526.428V75.104H568.796Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+          <path
+            d="M438.803 92H419.347V0.095993H455.315C478.483 0.095993 491.923 10.848 491.923 29.92C491.923 42.336 484.243 52.192 471.187 56.544L494.867 92H471.699L450.963 59.488H438.803V92ZM438.803 16.224V43.488H454.419C466.195 43.488 472.467 38.88 472.467 29.92C472.467 20.832 466.195 16.224 454.419 16.224H438.803Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+          <path
+            d="M404.296 75.104V92H342.472V0.095993H403.4V16.992H361.928V36.32H399.56V53.088H361.928V75.104H404.296Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+          <path
+            d="M264.303 92H244.847V0.095993H264.303V36.32H304.111V0.095993H323.567V92H304.111V53.088H264.303V92Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+          <path
+            d="M204.185 92H184.729V17.632H155.801V0.095993H233.241V17.632H204.185V92Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+          <path
+            d="M117.553 92H98.097V0.095993H117.553V92Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+          <path
+            d="M19.928 92H0.471985V0.095993H19.928V36.32H59.736V0.095993H79.192V92H59.736V53.088H19.928V92Z"
+            stroke="#393632"
+            stroke-width="5"
+          />
+        </svg>
+
+        <h1 class="h_name">I'M RALPH</h1>
+      </div>
+
+      <p class="h_info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+        laudantium?
+      </p>
+    </section>
+
+    <section class="about-me" id="about">
+      <h2 class="aboutme-heading">about me</h2>
+      <div class="bento_wrapper">
+        <div class="bento_layer">
+          <div class="bento_intro noisy-bg noisy-white">
+            <p>I am Ralph</p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque amet deleniti quisquam ex aut, sed explicabo laborum
+              sequi excepturi placeat!
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum a doloremque hic rem ex odit consequuntur asperiores
+              quae mollitia totam.
+            </p>
+          </div>
+          <div class="bento_picture noisy-bg noisy-white">
+            <img src="./public/assets/images/profile.png" alt="" />
+          </div>
+        </div>
+        <div class="bento_layer_2">
+          <div class="bento_a noisy-bg noisy-white">
+            <p class="bento_heading">3+</p>
+            <p class="bento_description">Freelance Years</p>
+          </div>
+          <div class="bento_b noisy-bg noisy-white">
+            <p class="bento_heading">4+</p>
+            <p class="bento_description">Completed Projects</p>
+          </div>
+          <div class="bento_c noisy-bg noisy-white">
+            <p class="bento_heading_2">Education</p>
+            <p class="bento_description">
+              Bachelor of Science in Information Technology
+            </p>
+            <p class="bento_description">Ateneo de Naga University</p>
+          </div>
+        </div>
+        <div class="bento_layer_3">
+          <div class="bento_d noisy-bg noisy-white"></div>
+          <div class="bento_e noisy-bg noisy-white"></div>
+          <div class="bento_f noisy-bg noisy-white"></div>
+        </div>
+      </div>
+    </section>
 
     <section id="hero" class="hero-container">
       <div class="hero-details">
-        <h1 class="hero-name">I'm Ralph Zepeda</h1>
-        <h3 class="hero-intro-2">a <span style="color: var(--clr-formalblue);">Frontend Developer</span></h3>
+        <h1 class="hero-name" id="outputDiv">WHAT I DO</h1>
+        <p class="hero_intro">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
+          fuga? Voluptatibus eos architecto in aut.
+        </p>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Aspernatur, fuga? Voluptatibus eos architecto in aut.</p>
-        <div class="btn-container">
-          <button class="btn" onclick="window.open('./public/assets/files/cv.pdf')">Download CV</button>
-          <div class="socials-container">
-            <img src="./public/assets/images/linkedin.png" alt="" class="icon" onclick="location.href='https://www.linkedin.com/in/zepedaralph/'">
-            <img src="./public/assets/images/github.png" alt="" class="icon" onclick="location.href='https://github.com/r-zepeda'">
+        <!-- <h3 class="hero-title">
+          Describe my works -- <span id="outputChip1">Modern</span>
+          <span id="outputChip2">Minimalist</span>
+        </h3> -->
+      </div>
+
+      <div class="ide_showcase noisy-bg">
+        <div class="toolbar">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+
+        <div class="ide_content_wrapper">
+          <div class="ide_lines">
+            <span class="ide_numbers">1</span>
+            <span class="ide_code">&lt;!doctype html&gt;</span>
+          </div>
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">2</span>
+            <span class="ide_code"
+              >&lt;div class="int-text"&gt;My Portfolio&lt;/div&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">3</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&lt;section
+              class="info-wrapper"&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines typing-animation">
+            <span class="ide_numbers">5</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<input
+                class="ide-input"
+                type="text"
+                maxlength="15"
+                id="inputField"
+                placeholder="WHAT I DO"
+                oninput="updateText()"
+              />&lt;/h1&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines typing-animation-2">
+            <span class="ide_numbers">6</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt; a
+              <button
+                onclick="updateChip()"
+                id="buttonChip1"
+                class="updateChip"
+              >
+                Frontend
+              </button>
+              <button
+                onclick="updateChip2()"
+                id="buttonChip2"
+                class="updateChip"
+              >
+                Developer</button
+              >&lt;/h2&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">4</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maiores,
+              asperiores qui quod iusto quibusdam!
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines typing-animation-3">
+            <span class="ide_numbers">7</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a
+              href='myproj.html'&gt;My Projects&lt;/a&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">8</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">9</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="mode"&gt;</span
+            >
+          </div>
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">10</span>
+            <span class="ide_code"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;
+              <a href="test.html">light</a> &gt;&lt;<button
+                class="mode_buttons"
+                onclick="toggleDarkMode()"
+              >
+                darkmode</button
+              >&gt;&lt;fancy&gt;</span
+            >
+          </div>
+
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">11</span>
+            <span class="ide_code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+          </div>
+          <br />
+          <div class="ide_lines">
+            <span class="ide_numbers">12</span>
+            <span class="ide_code">&lt;/div&gt;</span>
           </div>
         </div>
       </div>
-
-      <div class="hero_showcase">
-        <div class="hero_cards_wrapper">
-          <div class="hero_cards"></div>
-          <div class="hero_cards"></div>
-          <div class="hero_cards"></div>
-        </div>
-      </div>
-
     </section>
 
-
-    <section id="about" class="">
-      <p class="about-text-1">Get To Know More</p>
-      <h1 class="about-title">About Me</h1>
-
-      <div class="about-cards-container">
-        <div class="about-card">
-          <img src="./public/assets/images/experience.png" alt="" class="icon">
-          <h3>Experience</h3>
-          <p>Frontend and Wordpress Website development</p>
-        </div>
-        <div class="about-card">
-          <img src="./public/assets/images/education.png" alt="" class="icon">
-          <h3>Education</h3>
-          <p>BS IT <br>Ateneo de Naga University</p>
-        </div>
-        <div class="about-card">
-          <img src="./public/assets/images/education.png" alt="" class="icon">
-          <h3>Skills</h3>
-          <p>BS IT <br>Ateneo de Naga University</p>
-        </div>
-      </div>
-      <div class="about-details">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ex sit quidem asperiores, laboriosam perferendis dolorem, deleniti totam vero odit sequi quisquam numquam quod aut eos mollitia optio sunt ipsum! Magni tempora sequi neque est nisi labore similique, laborum hic, quo corporis odio eius, soluta animi dignissimos suscipit magnam recusandae.</p>
-      </div>
-    </section>
-
-
-    <section id="technologies" class="works_main">
-      <p class="about-text-1">My</p>
-      <h1 class="about-title">Latest Works</h1>
-
-      <div class="works_wrapper">
-        <div class="works_section">
-          <h3>Web Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vitae, voluptas error nulla totam autem ipsam vel ex quaerat sed.</p>
-          <div class="works_details">
-            <h4></h4>
-          </div>
-        </div>
-        <div class="works_section">
-          <h3>Wordpress</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odit at corporis eum culpa sit ut soluta nesciunt corrupti necessitatibus!</p>
-          <div class="works_details">
-            <h4>Bicol.PH News Website</h4>
-            <h4>20xx - 20xx</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, eveniet.</p>
-            <div class="works_image_wrapper">
-              <img src="./public/assets/images/works_2.png" alt="">
-              <h3 class="works_image_title">Website Demo</h3>
-            </div>
-          </div>
-        </div>
-        <div class="works_section">
-          <h3>React</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugit autem exercitationem enim quis nulla qui ab, atque expedita quia.</p>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="technologies">
-      <p class="about-text-1">My</p>
-      <h1 class="about-title">Certifications</h1>
-
-    </section>
-
-    <section id="technologies">
-      <p class="about-text-1">Recent</p>
-      <h1 class="about-title">Projects</h1>
-
-    </section>
-    <script src="./src/scripts.js"></script>
+    <script src="./src/script.js"></script>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

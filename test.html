@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .bento-box-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        max-width: 800px; /* Set a max-width to limit the width if desired */
+      }
+
+      .bento-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: 300px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .item {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .item:nth-child(1) {
+        grid-column: span 2;
+      }
+
+      .item:nth-child(3),
+      .item:nth-child(4) {
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bento-box-container">
+      <div class="bento-box">
+        <div class="item">Main Dish</div>
+        <div class="item">Side Dish 1</div>
+        <div class="item">Side Dish 2</div>
+        <div class="item">Side Dish 3</div>
+      </div>
+
+      <!-- Add more bento boxes as needed -->
+      <div class="bento-box">
+        <div class="item">Main Dish</div>
+        <div class="item">Side Dish 1</div>
+        <div class="item">Side Dish 2</div>
+        <div class="item">Side Dish 3</div>
+      </div>
+
+      <!-- Add more bento boxes as needed -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+.circle {
+  background-color: gray;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 100px;
+  margin-inline-end: 0.2rem;
+}
+
+.toolbar > *:last-child {
+  margin-inline-end: 0;
+}
+
+.ide_showcase {
+  overflow: hidden;
+  border-radius: 1rem;
+  min-width: 50%;
+  text-wrap: nowrap;
+  /* border: 1px dashed; */
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 2rem;
+  padding: 1rem;
+  /* border-bottom: 1px dashed; */
+  overflow: hidden;
+}
+
+.ide_content_wrapper {
+  padding: 1rem;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.ide_content_wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.ide_content_wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--ide-border);
+  border-radius: 8px;
+}
+
+.ide_content_wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: var(--ide-border);
+}
+
+.ide_content_wrapper::-webkit-scrollbar-track {
+  background-color: none;
+  border-radius: 8px;
+}
+
+.ide_lines {
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+.ide_numbers {
+  padding-inline-start: 1rem;
+  padding-inline-end: 2rem;
+}
+
+.ide_code {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.ide_code:hover {
+  opacity: 1;
+}
+
+.ide-input {
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-inline: 0.5rem;
+  text-align: center;
+  width: 10rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.updateChip {
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-inline: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.updateChip:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out-in {
+  animation: fadeOutIn 0.5s ease-in-out;
+}

@@ -1,0 +1,172 @@
+.about-me {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  height: auto;
+}
+
+.aboutme-heading {
+  font-size: var(--size-lg);
+}
+
+.bento_wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.bento_wrapper > * {
+  z-index: 1;
+}
+
+.bento_layer > * {
+  z-index: 1;
+  padding: 2rem;
+  font-size: var(--size-md);
+}
+
+.bento_layer_2 > * {
+  z-index: 1;
+}
+
+.bento_layer_3 > * {
+  z-index: 1;
+}
+
+.bento_layer {
+  margin-bottom: 1rem;
+  display: flex;
+  height: 22rem;
+  width: 100%;
+  gap: 1rem;
+  /* transform: translateX(100px);
+  /* animation: slide-right linear forwards;
+  animation-timeline: view();
+  animation-range: -30vh entry; */
+}
+
+.bento_layer_2 {
+  margin-bottom: 1rem;
+  display: flex;
+  height: 16rem;
+  width: 100%;
+  gap: 1rem;
+  /* transform: translateX(-100px);
+  /* animation: slide-left linear forwards;
+  animation-timeline: view();
+  animation-range: 30vh entry; */
+}
+
+.bento_layer_2 > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.bento_layer_3 {
+  margin-bottom: 1rem;
+  display: flex;
+  height: 12rem;
+  width: 100%;
+  gap: 1rem;
+  /* transform: translateX(100px);
+  /* animation: slide-right linear forwards;
+  animation-timeline: view();
+  animation-range: -30vh entry; */
+}
+
+.bento_intro {
+  flex: 1.5;
+  border-radius: 1rem;
+  /* border: 2px solid var(--ide-border); */
+}
+
+.bento_picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-radius: 1rem;
+  /* border: 2px solid var(--ide-border); */
+}
+
+.bento_picture > * {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  /* filter: grayscale(1); */
+}
+
+.bento_a {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-radius: 1rem;
+}
+
+.bento_b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-radius: 1rem;
+}
+
+.bento_c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  border-radius: 1rem;
+}
+.bento_d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  border-radius: 1rem;
+}
+.bento_e {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  border-radius: 1rem;
+}
+.bento_f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1.5;
+  border-radius: 1rem;
+}
+
+.bento_heading {
+  font-size: var(--size-lg);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento_heading_2 {
+  font-size: var(--size-md);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.bento_description {
+  font-size: var(--size-md);
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(0px);
+  }
+}
