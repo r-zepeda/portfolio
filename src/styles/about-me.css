@@ -25,10 +25,15 @@
 
 .bento_layer_2 > * {
   z-index: 1;
+  padding: 2rem;
+  font-size: var(--size-md);
 }
 
 .bento_layer_3 > * {
   z-index: 1;
+  padding: 2rem;
+  font-size: var(--size-md);
+  text-align: center;
 }
 
 .bento_layer {
@@ -56,6 +61,11 @@
 }
 
 .bento_layer_2 > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.bento_layer_3 > * {
   display: flex;
   flex-direction: column;
 }
