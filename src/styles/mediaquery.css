@@ -13,4 +13,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .fullwidth_bg {
+    /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

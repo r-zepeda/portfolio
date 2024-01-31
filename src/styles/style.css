@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   line-height: calc(1em + 0.5rem);
+  /* outline: 1px dashed red; */
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     color 0.3s ease,
     background-color 0.3s ease;
   background-color: var(--light-bg);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: var(--light-text);
 }
 
@@ -103,13 +104,29 @@ svg {
 }
 
 section {
+  position: relative;
   padding: 5rem;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 }
 
 .mode_buttons {
   border: none;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.fullwidth_bg {
+  background-color: var(--dark-bg);
+  position: relative;
+}
+
+.rounded-top {
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
