@@ -7,3 +7,4 @@ import "../src/styles/hero.css";
 import "../src/styles/ide.css";
 import "../src/styles/colors.css";
 import "../src/styles/about-me.css";
+import "../src/styles/works.css";
