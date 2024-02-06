@@ -1,34 +1,122 @@
 .works {
   color: var(--dark-text);
   position: relative;
+  height: auto;
 }
 
 .image-text {
   position: absolute;
 }
+
 .image-wrapper {
-  height: 20rem;
-  width: 10rem;
+  height: 100%;
+  width: 600px;
   border-radius: 1rem;
   overflow: hidden;
   transition: all 0.3s;
+  padding-block-end: 0.5rem;
+  padding-inline: 0.5rem;
+  border: 1px solid var(--ide-border);
+  overflow: hidden;
+
+  &:hover {
+    .featured-image {
+      filter: grayscale(0) brightness(1);
+      cursor: pointer;
+    }
+  }
 }
 
-.image-wrapper:hover {
-  width: 20rem;
+.featured-image-wrapper {
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
-.image {
+.featured-image {
+  filter: grayscale(1) brightness(0.5);
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
 }
 
-.image-track {
-  margin-block: 2rem;
-  width: 100%;
-  height: 90%;
+.featured-toolbar {
+  padding: 0.5rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-toolbar > * {
+  flex: 1;
+}
+
+.featured-toolbar a {
+  border: 1px solid var(--ide-border);
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.featured-toolbar a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.github-img {
+  height: 25px;
+  width: 25px;
+  opacity: 0.25;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.github-img:hover {
+  opacity: 1;
+  .github-image::before {
+    opacity: 1;
+  }
+}
+
+.x-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.x-buttons span {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  opacity: 0.25;
+}
+
+.ind-feat {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.ind-feat > * {
+  flex: 1;
+}
+
+.feat-details {
+  border: 1px solid red;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  gap: 1rem;
+}
+
+.feat-heading {
+  font-size: var(--size-md);
+  font-weight: 600;
 }
