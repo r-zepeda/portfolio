@@ -107,7 +107,7 @@ section {
   position: relative;
   padding: 5rem;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 
 .mode_buttons {
@@ -129,4 +129,9 @@ section {
 .rounded-bottom {
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
+}
+
+.aspect-1 {
+  aspect-ratio: 1/1;
+  position: relative;
 }

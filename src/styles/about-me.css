@@ -6,6 +6,7 @@
 
 .aboutme-heading {
   font-size: var(--size-lg);
+  text-align: center;
 }
 
 .bento_wrapper {
