@@ -30,21 +30,27 @@ nav {
   font-size: var(--size-base);
 }
 
-.nav-links a:hover {
-  background-color: pink;
-}
-
 .nav-links a {
   width: auto;
   height: auto;
   padding-inline: 0.5rem;
   border-radius: 10px;
   transition: all 0.3s ease;
+  color: var(--dark-text);
+  opacity: 0.6;
+}
+
+.email_container {
+  color: var(--dark-text);
+  opacity: 0.6;
+}
+
+.email_container:hover {
+  opacity: 1;
 }
 
 .nav-links a:hover {
-  color: var(--clr-white);
-  background-color: var(--clr-black);
+  opacity: 1;
 }
 
 #desktop-nav {
@@ -72,6 +78,7 @@ nav {
   height: 2rem;
   width: 2rem;
   transition: all 0.3s ease;
+  color: pink;
 }
 
 .nav-logo:hover {

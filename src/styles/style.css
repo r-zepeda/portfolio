@@ -11,7 +11,9 @@
   --light-text: rgb(64, 64, 64);
 
   --dark-bg: rgb(26, 26, 26);
+  --dark-bg2: rgb(19, 19, 20);
   --dark-text: rgb(223, 223, 218);
+  --dark-text-accent: rgb(68, 71, 70);
   --ide-border: rgba(64, 64, 64, 1);
 }
 
@@ -27,9 +29,9 @@ body {
   transition:
     color 0.3s ease,
     background-color 0.3s ease;
-  background-color: var(--light-bg);
+  background-color: var(--dark-bg2);
   overflow-x: hidden;
-  color: var(--light-text);
+  color: var(--dark-text);
 }
 
 body.dark-mode {

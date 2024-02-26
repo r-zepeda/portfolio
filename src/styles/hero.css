@@ -181,7 +181,7 @@
   height: 30rem;
   width: 30rem;
   border-radius: 50%;
-  background: linear-gradient(rgba(170, 170, 163, 0.3), rgb(223, 223, 218));
+  background: linear-gradient(rgba(170, 170, 163, 0.3), var(--dark-bg2));
   content: "";
   position: fixed;
   scale: 0.5;
@@ -215,7 +215,8 @@
     fill: transparent;
   }
   to {
-    fill: var(--light-text);
+    fill: var(--dark-text);
+    opacity: 0.3;
   }
 }
 
@@ -241,7 +242,7 @@
 }
 
 .hero-button {
-  background-color: var(--light-text);
+  background-color: var(--dark-text-accent);
   color: #fff;
   border: none;
   padding-block: 0.5rem;
