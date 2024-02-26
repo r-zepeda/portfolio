@@ -238,7 +238,6 @@
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
-  animation: fadein 0.3s ease forwards 2.5s;
 }
 
 .hero-button {
@@ -249,4 +248,6 @@
   padding-inline: 1rem;
   border-radius: 20px;
   cursor: pointer;
+  animation: fadein 0.3s ease forwards 2.5s;
+  opacity: 0;
 }
