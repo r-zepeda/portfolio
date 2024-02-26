@@ -7,6 +7,7 @@
 .aboutme-heading {
   font-size: var(--size-lg);
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .bento_wrapper {
@@ -86,6 +87,10 @@
 .bento_intro {
   flex: 1.5;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-block: 3rem;
   /* border: 2px solid var(--ide-border); */
 }
 
@@ -168,6 +173,8 @@
 
 .bento_description {
   font-size: var(--size-md);
+  width: 100%;
+  text-align: center;
 }
 
 @keyframes slide-right {
@@ -180,4 +187,14 @@
   to {
     transform: translateX(0px);
   }
+}
+
+.socials-bento {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socials-bento > * {
+  height: 50px;
+  width: 50px;
 }

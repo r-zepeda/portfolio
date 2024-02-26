@@ -38,7 +38,7 @@
 }
 
 .featured-image {
-  filter: grayscale(1) brightness(0.8);
+  filter: brightness(0.8);
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -194,19 +194,22 @@
 .works-slider {
   padding-block: 1rem;
   gap: 0.5rem;
-  animation: scroll 30s linear infinite;
+  animation: scroll 50s linear infinite;
   white-space: nowrap; /* Ensures content doesn't wrap */
   overflow: hidden; /* Hides any overflowing content */
   display: flex;
   width: max-content; /* Adjust width to fit content */
-}
-
-.works-slider:hover {
-  animation-play-state: paused;
+  margin-bottom: 2.5rem;
 }
 
 @keyframes scroll {
   to {
     transform: translate(-50%);
   }
+}
+
+.works-detailed {
+  background-color: pink;
+  height: 100px;
+  width: 100%;
 }
